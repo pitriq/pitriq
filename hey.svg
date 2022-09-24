@@ -1,60 +1,93 @@
-<svg fill="none" viewBox="0 0 800 100" width="800" height="100" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 800 80" width="800" height="80" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
-    <style>
-      @keyframes gradientText {
-        0% {
-          background-position: 0% 50%;
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes gradientAnimation {
+          0% {
+            background-position: 0% 70%;
+          }
+
+          50% {
+            background-position: 100% 30%;
+          }
+
+          100% {
+            background-position: 0% 70%;
+          }
         }
 
-        50% {
-          background-position: 25% 50%;
+        * {
+          margin: 0;
+          padding: 0;
         }
 
-        100% {
-          background-position: 0% 50%;
+        .content {
+          display: flex;
+          height: 100%;
+          align-items: center;
         }
-      }
 
-      .content {
-        display: flex;
-        height: 100%;
-        align-items: center;
-      }
+        h1 {
+          font-family: "Inter",
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            "Roboto",
+            "Oxygen",
+            "Ubuntu",
+            "Cantarell",
+            "Fira Sans",
+            "Droid Sans",
+            "Helvetica Neue",
+            sans-serif;
+          line-height: 1.1;
+          font-weight: 800;
+          font-size: 4rem;
+          letter-spacing: -.04em;
+          color: #fff;
+          -webkit-text-fill-color: transparent;
+        }
 
-      h1 {
-        font-family: "Inter",
-          -apple-system,
-          BlinkMacSystemFont,
-          "Segoe UI",
-          "Roboto",
-          "Oxygen",
-          "Ubuntu",
-          "Cantarell",
-          "Fira Sans",
-          "Droid Sans",
-          "Helvetica Neue",
-          sans-serif;
-        font-size: 4rem;
-        font-weight: 800;
-        letter-spacing: -.06em;
-        background: linear-gradient(50deg,
-            hsl(314deg 96% 58%) 0%,
-            hsl(283deg 96% 70%) 19%,
-            hsl(245deg 100% 78%) 33%,
-            hsl(207deg 100% 64%) 45%,
-            hsl(194deg 100% 50%) 54%,
-            hsl(190deg 100% 50%) 61%,
-            hsl(187deg 100% 50%) 67%,
-            hsl(182deg 83% 66%) 73%,
-            hsl(170deg 78% 78%) 80%,
-            hsl(151deg 81% 88%) 100%);
-        background-size: 125%;
-        background-clip: text;
-        animation: gradientAnimation 5s cubic-bezier(0.65, 0, 0.35, 1) infinite;
-      }
-    </style>
-    <div class="content">
-      <h1>Hey.</h1>
+        .hello {
+          background: linear-gradient(140deg,
+              hsl(234deg 83% 62%) 0%,
+              hsl(277deg 72% 60%) 11%,
+              hsl(309deg 76% 57%) 22%,
+              hsl(323deg 100% 60%) 33%,
+              hsl(335deg 100% 62%) 44%,
+              hsl(355deg 100% 69%) 56%,
+              hsl(19deg 100% 65%) 67%,
+              hsl(35deg 100% 58%) 78%,
+              hsl(48deg 100% 50%) 89%,
+              hsl(55deg 100% 50%) 100%);
+          background-size: 200%;
+          background-clip: text;
+          -webkit-background-clip: text;
+          animation: gradientAnimation 12s ease-in-out infinite;
+          -webkit-animation: gradientAnimation 12s ease-in-out infinite;
+        }
+
+        .greeting {
+          background: linear-gradient(140deg,
+              hsl(0deg 0% 100%) 0%,
+              hsl(217deg 9% 94%) 19%,
+              hsl(217deg 9% 88%) 33%,
+              hsl(217deg 9% 83%) 45%,
+              hsl(216deg 9% 77%) 54%,
+              hsl(216deg 9% 72%) 61%,
+              hsl(216deg 9% 66%) 67%,
+              hsl(216deg 9% 61%) 73%,
+              hsl(216deg 9% 55%) 80%,
+              hsl(215deg 9% 50%) 100%);
+          background-size: 200%;
+          background-clip: text;
+          -webkit-background-clip: text;
+        }
+      </style>
+      <div class="content">
+        <h1><span class="hello">Hello. </span><span class="greeting">Francisco here.</span></h1>
+        <!-- <h2 class="text"></h2> -->
+      </div>
     </div>
   </foreignObject>
 </svg>
