@@ -1,0 +1,60 @@
+<svg fill="none" viewBox="0 0 800 100" width="800" height="100" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <style>
+      @keyframes gradientText {
+        0% {
+          background-position: 0% 50%;
+        }
+
+        50% {
+          background-position: 25% 50%;
+        }
+
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .content {
+        display: flex;
+        height: 100%;
+        align-items: center;
+      }
+
+      h1 {
+        font-family: "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          "Roboto",
+          "Oxygen",
+          "Ubuntu",
+          "Cantarell",
+          "Fira Sans",
+          "Droid Sans",
+          "Helvetica Neue",
+          sans-serif;
+        font-size: 4rem;
+        font-weight: 800;
+        letter-spacing: -.06em;
+        background: linear-gradient(50deg,
+            hsl(314deg 96% 58%) 0%,
+            hsl(283deg 96% 70%) 19%,
+            hsl(245deg 100% 78%) 33%,
+            hsl(207deg 100% 64%) 45%,
+            hsl(194deg 100% 50%) 54%,
+            hsl(190deg 100% 50%) 61%,
+            hsl(187deg 100% 50%) 67%,
+            hsl(182deg 83% 66%) 73%,
+            hsl(170deg 78% 78%) 80%,
+            hsl(151deg 81% 88%) 100%);
+        background-size: 125%;
+        background-clip: text;
+        animation: gradientAnimation 5s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+      }
+    </style>
+    <div class="content">
+      <h1>Hey.</h1>
+    </div>
+  </foreignObject>
+</svg>
