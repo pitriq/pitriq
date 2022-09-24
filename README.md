@@ -1,6 +1,5 @@
-<div>
-    <img src="https://raw.githubusercontent.com/pitriq/pitriq/main/hey.svg"/>
-</div>
+![Hey](https://raw.githubusercontent.com/pitriq/pitriq/main/hey_dark.svg#gh-dark-mode-only)
+![Hey](https://raw.githubusercontent.com/pitriq/pitriq/main/hey_light.svg#gh-light-mode-only)
 
 Product-minded mobile dev. Interactions designer.
 
